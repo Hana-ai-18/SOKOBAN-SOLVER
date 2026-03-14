@@ -1,3 +1,4 @@
+#player_interface.py - Handles the player interface for Sokoban game
 import pygame
 import constants as SOKOBAN
 
@@ -12,7 +13,6 @@ class PlayerInterface:
         self.font_small = pygame.font.Font(
             'sokoban\\assets\\fonts\\FreeSansBold.ttf', 13)
 
-       
         self.txtLevel       = "Level 1"
         self.colorTxtLevel  = SOKOBAN.BLACK
 
@@ -22,7 +22,7 @@ class PlayerInterface:
         self.txtReset        = "Restart (R)"
         self.colorTxtReset   = SOKOBAN.BLACK
 
-
+        # --- Auto buttons (Row 1: DFS / BFS / UCS) ---
         self.txtAutoDFS      = "Auto DFS"
         self.colorTxtAutoDFS = SOKOBAN.BLACK
 
@@ -32,14 +32,18 @@ class PlayerInterface:
         self.txtAutoUCS      = "Auto UCS"
         self.colorTxtAutoUCS = SOKOBAN.BLACK
 
-       
+        # --- Auto A* button (Row 1 extra / Row 2) ---
+        self.txtAutoAStar      = "Auto A*"
+        self.colorTxtAutoAStar = SOKOBAN.BLACK
+
+        # --- Level navigation ---
         self.txtPrev         = "< Level"
         self.colorTxtPrev    = SOKOBAN.BLACK
 
         self.txtNext         = "Level >"
         self.colorTxtNext    = SOKOBAN.BLACK
 
-  
+    # ------------------------------------------------------------------
     def click(self, pos_click, level, game):
         x, y = pos_click
 
@@ -50,31 +54,36 @@ class PlayerInterface:
                 game.steps -= 1
             self.colorTxtCancel = SOKOBAN.GREY
 
-        #  Restart 
+        # Restart
         if self._hit(x, y, self.posTxtReset, self.txtResetSurface):
             game.load_level()
 
-        #  Auto DFS 
+        # Auto DFS
         if self._hit(x, y, self.posTxtAutoDFS, self.txtAutoDFSSurface):
-            game.load_level()        
+            game.load_level()
             game.auto_move('dfs')
 
-        #  Auto BFS 
+        # Auto BFS
         if self._hit(x, y, self.posTxtAutoBFS, self.txtAutoBFSSurface):
             game.load_level()
             game.auto_move('bfs')
 
-        #  Auto UCS 
+        # Auto UCS
         if self._hit(x, y, self.posTxtAutoUCS, self.txtAutoUCSSurface):
             game.load_level()
             game.auto_move('ucs')
 
-        #  Level trước 
+        # Auto A*
+        if self._hit(x, y, self.posTxtAutoAStar, self.txtAutoAStarSurface):
+            game.load_level()
+            game.auto_move('astar')
+
+        # Level truoc
         if self._hit(x, y, self.posTxtPrev, self.txtPrevSurface):
             game.index_level = max(1, game.index_level - 1)
             game.load_level()
 
-        #  Level sau 
+        # Level sau
         if self._hit(x, y, self.posTxtNext, self.txtNextSurface):
             game.index_level = min(18, game.index_level + 1)
             game.load_level()
@@ -84,49 +93,58 @@ class PlayerInterface:
         return (pos[0] < x < pos[0] + surface.get_width() and
                 pos[1] < y < pos[1] + surface.get_height())
 
-  
+    
     def render(self, window, level):
-        #  Level label 
+        # Level label
         self.txtLevel = f"Level {level}"
         self.txtLevelSurface = self.font_menu.render(
             self.txtLevel, True, self.colorTxtLevel, SOKOBAN.WHITE)
         window.blit(self.txtLevelSurface, (10, 10))
 
-        #  Undo  
+        # Undo
         self.txtCancelSurface = self.font_menu.render(
             self.txtCancel, True, self.colorTxtCancel, SOKOBAN.WHITE)
         self.posTxtCancel = (
             SOKOBAN.WINDOW_WIDTH - self.txtCancelSurface.get_width() - 10, 10)
         window.blit(self.txtCancelSurface, self.posTxtCancel)
 
-        #  Restart
+        # Restart
         self.txtResetSurface = self.font_menu.render(
             self.txtReset, True, self.colorTxtReset, SOKOBAN.WHITE)
         self.posTxtReset = (
             SOKOBAN.WINDOW_WIDTH / 2 - self.txtResetSurface.get_width() / 2, 10)
         window.blit(self.txtResetSurface, self.posTxtReset)
 
-        
-        btn_y = 36
+        # --- Row 1: DFS / BFS / UCS / A* (chia deu 5 phan) ---
+        btn_y   = 36
         total_w = SOKOBAN.WINDOW_WIDTH
-        spacing = total_w // 4
+        spacing = total_w // 5          # 5 khoang: 1=DFS 2=BFS 3=UCS 4=A* 5=trong
 
         self.txtAutoDFSSurface = self.font_menu.render(
             self.txtAutoDFS, True, self.colorTxtAutoDFS, SOKOBAN.WHITE)
-        self.posTxtAutoDFS = (spacing - self.txtAutoDFSSurface.get_width() // 2, btn_y)
+        self.posTxtAutoDFS = (
+            spacing * 1 - self.txtAutoDFSSurface.get_width() // 2, btn_y)
         window.blit(self.txtAutoDFSSurface, self.posTxtAutoDFS)
 
         self.txtAutoBFSSurface = self.font_menu.render(
             self.txtAutoBFS, True, self.colorTxtAutoBFS, SOKOBAN.WHITE)
-        self.posTxtAutoBFS = (spacing * 2 - self.txtAutoBFSSurface.get_width() // 2, btn_y)
+        self.posTxtAutoBFS = (
+            spacing * 2 - self.txtAutoBFSSurface.get_width() // 2, btn_y)
         window.blit(self.txtAutoBFSSurface, self.posTxtAutoBFS)
 
         self.txtAutoUCSSurface = self.font_menu.render(
             self.txtAutoUCS, True, self.colorTxtAutoUCS, SOKOBAN.WHITE)
-        self.posTxtAutoUCS = (spacing * 3 - self.txtAutoUCSSurface.get_width() // 2, btn_y)
+        self.posTxtAutoUCS = (
+            spacing * 3 - self.txtAutoUCSSurface.get_width() // 2, btn_y)
         window.blit(self.txtAutoUCSSurface, self.posTxtAutoUCS)
 
-      
+        self.txtAutoAStarSurface = self.font_menu.render(
+            self.txtAutoAStar, True, self.colorTxtAutoAStar, SOKOBAN.WHITE)
+        self.posTxtAutoAStar = (
+            spacing * 4 - self.txtAutoAStarSurface.get_width() // 2, btn_y)
+        window.blit(self.txtAutoAStarSurface, self.posTxtAutoAStar)
+
+        # --- Level navigation (bottom center) ---
         nav_y = SOKOBAN.WINDOW_HEIGHT - 28
 
         self.txtPrevSurface = self.font_small.render(
@@ -137,6 +155,5 @@ class PlayerInterface:
 
         self.txtNextSurface = self.font_small.render(
             self.txtNext, True, self.colorTxtNext, SOKOBAN.WHITE)
-        self.posTxtNext = (
-            SOKOBAN.WINDOW_WIDTH // 2 + 20, nav_y)
+        self.posTxtNext = (SOKOBAN.WINDOW_WIDTH // 2 + 20, nav_y)
         window.blit(self.txtNextSurface, self.posTxtNext)
