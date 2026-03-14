@@ -432,23 +432,36 @@ def aStarSearch(gameState):
 
 
 def get_move(layout, player_pos, method):
-   
+    """
+    Ham duoc goi tu game.py de giai mot level.
+    Nhan vao layout ban do va vi tri player, tra ve:
+      (result, elapsed_solve, nodes_expanded)
+      - result        : chuoi hanh dong de giai level (list cac ky tu)
+      - elapsed_solve : thoi gian chay thuat toan (don vi: giay)
+      - nodes_expanded: so nut da duoc mo rong trong qua trinh tim kiem
+    method: 'dfs' | 'bfs' | 'ucs' | 'astar'
+    """
     global posWalls, posGoals, nodes_expanded
-    nodes_expanded = 0  
-
+    nodes_expanded = 0   
     t0 = time.time()   
+ 
+ 
     gameState = transferToGameState2(layout, player_pos)
     posWalls  = PosOfWalls(gameState)    
     posGoals  = PosOfGoals(gameState)    
+
     if   method == 'dfs':   result = depthFirstSearch(gameState)
     elif method == 'bfs':   result = breadthFirstSearch(gameState)
     elif method == 'ucs':   result = uniformCostSearch(gameState)
     elif method == 'astar': result = aStarSearch(gameState)
     else: raise ValueError(f'Invalid method: {method}')
-
-    t1 = time.time()   
-    n  = len(result) if result else 0
-
+ 
+    t1 = time.time()              
+    elapsed_solve = t1 - t0       
+    n = len(result) if result else 0
+ 
     
-    print(f'[{method.upper():5s}] {n:4d} steps | {t1-t0:7.2f}s | {nodes_expanded} nodes expanded')
-    return result   
+    print(f'[{method.upper():5s}] {n:4d} steps | {elapsed_solve:7.2f}s | {nodes_expanded} nodes expanded')
+ 
+   
+    return result, elapsed_solve, nodes_expanded

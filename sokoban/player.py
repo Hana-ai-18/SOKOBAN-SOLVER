@@ -1,4 +1,4 @@
-
+#player.py - Player class for Sokoban
 import pygame
 from pygame.locals import *
 import constants as SOKOBAN

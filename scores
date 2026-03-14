@@ -2,662 +2,370 @@
     "level": 16,
     "records": {
         "1": {
-            "best_time": 2.79,
+            "best_time": 2.8,
             "best_steps": 12,
+            "best_solver_t": 0.009,
             "history": [
                 {
-                    "time": 2.79,
-                    "steps": 12,
-                    "method": "bfs",
-                    "date": "2026-03-06 23:24:57"
-                },
-                {
-                    "time": 19.56,
-                    "steps": 79,
-                    "method": "dfs",
-                    "date": "2026-03-07 17:29:16"
-                },
-                {
-                    "time": 2.81,
+                    "time": 2.8,
                     "steps": 12,
                     "method": "ucs",
-                    "date": "2026-03-07 17:29:33"
+                    "solver_time": 0.085,
+                    "nodes_expanded": 720,
+                    "date": "2026-03-14 16:36:45"
                 },
                 {
-                    "time": 7.34,
-                    "steps": 22,
-                    "method": "manual",
-                    "date": "2026-03-07 21:39:53"
-                },
-                {
-                    "time": 10.37,
-                    "steps": 31,
-                    "method": "manual",
-                    "date": "2026-03-08 14:40:42"
-                },
-                {
-                    "time": 19.57,
-                    "steps": 79,
-                    "method": "dfs",
-                    "date": "2026-03-10 00:44:36"
-                },
-                {
-                    "time": 19.55,
-                    "steps": 79,
-                    "method": "dfs",
-                    "date": "2026-03-10 00:45:16"
-                },
-                {
-                    "time": 2.79,
+                    "time": 2.8,
                     "steps": 12,
                     "method": "astar",
-                    "date": "2026-03-14 16:22:44"
+                    "solver_time": 0.009,
+                    "nodes_expanded": 55,
+                    "date": "2026-03-14 16:41:50"
                 }
             ]
         },
         "2": {
-            "best_time": 2.02,
+            "best_time": 2.03,
             "best_steps": 9,
+            "best_solver_t": 0.006,
             "history": [
                 {
-                    "time": 2.02,
-                    "steps": 9,
-                    "method": "bfs",
-                    "date": "2026-03-06 23:25:23"
-                },
-                {
-                    "time": 5.84,
-                    "steps": 24,
-                    "method": "dfs",
-                    "date": "2026-03-07 17:29:49"
-                },
-                {
-                    "time": 2.1,
+                    "time": 2.03,
                     "steps": 9,
                     "method": "ucs",
-                    "date": "2026-03-07 17:30:05"
+                    "solver_time": 0.008,
+                    "nodes_expanded": 64,
+                    "date": "2026-03-14 16:36:49"
                 },
                 {
-                    "time": 3.24,
-                    "steps": 10,
-                    "method": "manual",
-                    "date": "2026-03-07 21:39:56"
-                },
-                {
-                    "time": 2.44,
-                    "steps": 11,
-                    "method": "manual",
-                    "date": "2026-03-08 14:40:47"
-                },
-                {
-                    "time": 5.77,
-                    "steps": 24,
-                    "method": "dfs",
-                    "date": "2026-03-10 00:44:45"
-                },
-                {
-                    "time": 2.04,
+                    "time": 2.05,
                     "steps": 9,
                     "method": "astar",
-                    "date": "2026-03-14 16:22:48"
-                }
-            ]
-        },
-        "16": {
-            "best_time": 8.32,
-            "best_steps": 34,
-            "history": [
-                {
-                    "time": 8.33,
-                    "steps": 34,
-                    "method": "bfs",
-                    "date": "2026-03-06 23:27:02"
-                },
-                {
-                    "time": 21.3,
-                    "steps": 86,
-                    "method": "dfs",
-                    "date": "2026-03-07 14:26:48"
-                },
-                {
-                    "time": 8.32,
-                    "steps": 34,
-                    "method": "bfs",
-                    "date": "2026-03-07 18:30:01"
-                },
-                {
-                    "time": 8.37,
-                    "steps": 34,
-                    "method": "ucs",
-                    "date": "2026-03-07 21:41:07"
-                },
-                {
-                    "time": 8.37,
-                    "steps": 34,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:15:04"
-                },
-                {
-                    "time": 8.32,
-                    "steps": 34,
-                    "method": "astar",
-                    "date": "2026-03-14 16:25:22"
+                    "solver_time": 0.006,
+                    "nodes_expanded": 33,
+                    "date": "2026-03-14 16:41:55"
                 }
             ]
         },
         "3": {
-            "best_time": 3.51,
+            "best_time": 3.55,
             "best_steps": 15,
+            "best_solver_t": 0.02,
             "history": [
-                {
-                    "time": 3.54,
-                    "steps": 15,
-                    "method": "bfs",
-                    "date": "2026-03-06 23:40:45"
-                },
-                {
-                    "time": 3.51,
-                    "steps": 15,
-                    "method": "bfs",
-                    "date": "2026-03-07 17:29:55"
-                },
-                {
-                    "time": 3.58,
-                    "steps": 15,
-                    "method": "bfs",
-                    "date": "2026-03-07 17:30:12"
-                },
-                {
-                    "time": 3.61,
-                    "steps": 15,
-                    "method": "ucs",
-                    "date": "2026-03-07 17:30:20"
-                },
-                {
-                    "time": 3.61,
-                    "steps": 15,
-                    "method": "ucs",
-                    "date": "2026-03-07 17:32:37"
-                },
-                {
-                    "time": 100.72,
-                    "steps": 403,
-                    "method": "dfs",
-                    "date": "2026-03-07 17:35:52"
-                },
-                {
-                    "time": 12.94,
-                    "steps": 32,
-                    "method": "manual",
-                    "date": "2026-03-07 21:40:09"
-                },
-                {
-                    "time": 3.52,
-                    "steps": 15,
-                    "method": "bfs",
-                    "date": "2026-03-08 14:41:18"
-                },
-                {
-                    "time": 3.51,
-                    "steps": 15,
-                    "method": "bfs",
-                    "date": "2026-03-08 14:41:28"
-                },
                 {
                     "time": 3.56,
                     "steps": 15,
+                    "method": "ucs",
+                    "solver_time": 0.111,
+                    "nodes_expanded": 509,
+                    "date": "2026-03-14 16:36:54"
+                },
+                {
+                    "time": 3.55,
+                    "steps": 15,
                     "method": "astar",
-                    "date": "2026-03-14 16:22:53"
+                    "solver_time": 0.02,
+                    "nodes_expanded": 61,
+                    "date": "2026-03-14 16:42:00"
                 }
             ]
         },
         "4": {
-            "best_time": 1.55,
+            "best_time": 1.51,
             "best_steps": 7,
+            "best_solver_t": 0.002,
             "history": [
                 {
-                    "time": 1.55,
-                    "steps": 7,
-                    "method": "bfs",
-                    "date": "2026-03-06 23:40:48"
-                },
-                {
-                    "time": 6.55,
-                    "steps": 27,
-                    "method": "dfs",
-                    "date": "2026-03-07 17:31:14"
-                },
-                {
-                    "time": 1.59,
-                    "steps": 7,
-                    "method": "bfs",
-                    "date": "2026-03-07 17:31:20"
-                },
-                {
-                    "time": 1.6,
+                    "time": 1.61,
                     "steps": 7,
                     "method": "ucs",
-                    "date": "2026-03-07 17:31:26"
+                    "solver_time": 0.007,
+                    "nodes_expanded": 55,
+                    "date": "2026-03-14 16:36:57"
                 },
                 {
-                    "time": 6.58,
-                    "steps": 27,
-                    "method": "dfs",
-                    "date": "2026-03-07 17:36:33"
-                },
-                {
-                    "time": 1.61,
-                    "steps": 7,
-                    "method": "bfs",
-                    "date": "2026-03-08 14:41:39"
-                },
-                {
-                    "time": 1.61,
+                    "time": 1.51,
                     "steps": 7,
                     "method": "astar",
-                    "date": "2026-03-14 16:22:56"
+                    "solver_time": 0.002,
+                    "nodes_expanded": 17,
+                    "date": "2026-03-14 16:42:04"
                 }
             ]
         },
         "5": {
-            "best_time": 4.8,
+            "best_time": 4.78,
             "best_steps": 20,
+            "best_solver_t": 0.238,
             "history": [
                 {
-                    "time": 4.9,
-                    "steps": 20,
-                    "method": "bfs",
-                    "date": "2026-03-06 23:46:35"
-                },
-                {
-                    "time": 4.85,
+                    "time": 4.78,
                     "steps": 20,
                     "method": "ucs",
-                    "date": "2026-03-07 00:03:40"
+                    "solver_time": 102.525,
+                    "nodes_expanded": 357203,
+                    "date": "2026-03-14 16:38:46"
                 },
                 {
-                    "time": 4.8,
-                    "steps": 20,
-                    "method": "bfs",
-                    "date": "2026-03-08 14:46:01"
-                },
-                {
-                    "time": 4.87,
+                    "time": 4.86,
                     "steps": 20,
                     "method": "astar",
-                    "date": "2026-03-14 16:23:02"
+                    "solver_time": 0.238,
+                    "nodes_expanded": 847,
+                    "date": "2026-03-14 16:42:11"
                 }
             ]
         },
         "6": {
             "best_time": 4.52,
             "best_steps": 19,
+            "best_solver_t": 0.017,
             "history": [
-                {
-                    "time": 4.58,
-                    "steps": 19,
-                    "method": "bfs",
-                    "date": "2026-03-06 23:51:11"
-                },
-                {
-                    "time": 13.58,
-                    "steps": 55,
-                    "method": "dfs",
-                    "date": "2026-03-07 17:31:50"
-                },
-                {
-                    "time": 4.56,
-                    "steps": 19,
-                    "method": "ucs",
-                    "date": "2026-03-07 17:32:09"
-                },
-                {
-                    "time": 13.63,
-                    "steps": 55,
-                    "method": "dfs",
-                    "date": "2026-03-07 17:36:58"
-                },
                 {
                     "time": 4.52,
                     "steps": 19,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:12:12"
+                    "method": "ucs",
+                    "solver_time": 0.018,
+                    "nodes_expanded": 250,
+                    "date": "2026-03-14 16:39:13"
                 },
                 {
-                    "time": 4.54,
+                    "time": 4.53,
                     "steps": 19,
                     "method": "astar",
-                    "date": "2026-03-14 16:23:08"
+                    "solver_time": 0.017,
+                    "nodes_expanded": 164,
+                    "date": "2026-03-14 16:42:17"
                 }
             ]
         },
         "7": {
-            "best_time": 5.04,
+            "best_time": 5.06,
             "best_steps": 21,
+            "best_solver_t": 0.15,
             "history": [
-                {
-                    "time": 5.04,
-                    "steps": 21,
-                    "method": "bfs",
-                    "date": "2026-03-06 23:52:03"
-                },
-                {
-                    "time": 5.07,
-                    "steps": 21,
-                    "method": "bfs",
-                    "date": "2026-03-07 17:31:58"
-                },
-                {
-                    "time": 5.1,
-                    "steps": 21,
-                    "method": "bfs",
-                    "date": "2026-03-07 17:50:05"
-                },
-                {
-                    "time": 5.1,
-                    "steps": 21,
-                    "method": "ucs",
-                    "date": "2026-03-07 17:50:15"
-                },
-                {
-                    "time": 5.1,
-                    "steps": 21,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:12:20"
-                },
-                {
-                    "time": 176.98,
-                    "steps": 707,
-                    "method": "dfs",
-                    "date": "2026-03-10 00:59:38"
-                },
                 {
                     "time": 5.08,
                     "steps": 21,
+                    "method": "ucs",
+                    "solver_time": 0.794,
+                    "nodes_expanded": 6046,
+                    "date": "2026-03-14 16:39:25"
+                },
+                {
+                    "time": 5.06,
+                    "steps": 21,
                     "method": "astar",
-                    "date": "2026-03-14 16:23:15"
+                    "solver_time": 0.15,
+                    "nodes_expanded": 1032,
+                    "date": "2026-03-14 16:42:24"
                 }
             ]
         },
         "8": {
-            "best_time": 24.1,
+            "best_time": 24.14,
             "best_steps": 97,
+            "best_solver_t": 0.307,
             "history": [
                 {
-                    "time": 80.77,
-                    "steps": 323,
-                    "method": "dfs",
-                    "date": "2026-03-07 13:17:04"
-                },
-                {
-                    "time": 80.65,
-                    "steps": 323,
-                    "method": "dfs",
-                    "date": "2026-03-07 17:51:38"
-                },
-                {
-                    "time": 24.1,
+                    "time": 24.14,
                     "steps": 97,
                     "method": "ucs",
-                    "date": "2026-03-07 17:52:35"
+                    "solver_time": 0.307,
+                    "nodes_expanded": 2383,
+                    "date": "2026-03-14 16:39:51"
                 },
                 {
                     "time": 24.15,
                     "steps": 97,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:12:52"
-                },
-                {
-                    "time": 24.13,
-                    "steps": 97,
                     "method": "astar",
-                    "date": "2026-03-14 16:23:40"
+                    "solver_time": 0.312,
+                    "nodes_expanded": 2182,
+                    "date": "2026-03-14 16:42:50"
                 }
             ]
         },
         "9": {
-            "best_time": 1.78,
+            "best_time": 1.82,
             "best_steps": 8,
+            "best_solver_t": 0.007,
             "history": [
                 {
-                    "time": 1.78,
-                    "steps": 8,
-                    "method": "bfs",
-                    "date": "2026-03-07 18:16:10"
-                },
-                {
-                    "time": 1.84,
-                    "steps": 8,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:13:10"
-                },
-                {
-                    "time": 18.37,
-                    "steps": 74,
-                    "method": "dfs",
-                    "date": "2026-03-10 01:00:18"
-                },
-                {
-                    "time": 1.83,
+                    "time": 1.82,
                     "steps": 8,
                     "method": "ucs",
-                    "date": "2026-03-10 01:00:43"
+                    "solver_time": 0.016,
+                    "nodes_expanded": 74,
+                    "date": "2026-03-14 16:39:55"
                 },
                 {
-                    "time": 1.83,
+                    "time": 1.82,
                     "steps": 8,
                     "method": "astar",
-                    "date": "2026-03-14 16:23:44"
+                    "solver_time": 0.007,
+                    "nodes_expanded": 28,
+                    "date": "2026-03-14 16:42:55"
                 }
             ]
         },
         "10": {
-            "best_time": 8.03,
+            "best_time": 8.08,
             "best_steps": 33,
+            "best_solver_t": 0.03,
             "history": [
                 {
-                    "time": 8.03,
+                    "time": 8.08,
                     "steps": 33,
                     "method": "ucs",
-                    "date": "2026-03-07 18:16:21"
+                    "solver_time": 0.03,
+                    "nodes_expanded": 218,
+                    "date": "2026-03-14 16:40:05"
                 },
                 {
-                    "time": 8.05,
-                    "steps": 33,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:13:20"
-                },
-                {
-                    "time": 9.06,
-                    "steps": 37,
-                    "method": "dfs",
-                    "date": "2026-03-10 01:00:30"
-                },
-                {
-                    "time": 8.12,
+                    "time": 8.08,
                     "steps": 33,
                     "method": "astar",
-                    "date": "2026-03-14 16:23:54"
+                    "solver_time": 0.031,
+                    "nodes_expanded": 201,
+                    "date": "2026-03-14 16:43:05"
                 }
             ]
         },
         "11": {
-            "best_time": 8.28,
+            "best_time": 8.29,
             "best_steps": 34,
+            "best_solver_t": 0.03,
             "history": [
                 {
-                    "time": 8.79,
-                    "steps": 36,
-                    "method": "dfs",
-                    "date": "2026-03-07 18:16:36"
-                },
-                {
-                    "time": 8.37,
-                    "steps": 34,
-                    "method": "bfs",
-                    "date": "2026-03-07 18:16:51"
-                },
-                {
-                    "time": 8.28,
-                    "steps": 34,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:13:32"
-                },
-                {
-                    "time": 8.3,
+                    "time": 8.35,
                     "steps": 34,
                     "method": "ucs",
-                    "date": "2026-03-10 01:01:05"
+                    "solver_time": 0.03,
+                    "nodes_expanded": 296,
+                    "date": "2026-03-14 16:40:15"
                 },
                 {
-                    "time": 8.38,
+                    "time": 8.29,
                     "steps": 34,
                     "method": "astar",
-                    "date": "2026-03-14 16:24:05"
+                    "solver_time": 0.031,
+                    "nodes_expanded": 280,
+                    "date": "2026-03-14 16:43:15"
                 }
             ]
         },
         "12": {
-            "best_time": 5.52,
+            "best_time": 5.58,
             "best_steps": 23,
+            "best_solver_t": 0.086,
             "history": [
-                {
-                    "time": 5.52,
-                    "steps": 23,
-                    "method": "ucs",
-                    "date": "2026-03-07 18:16:59"
-                },
-                {
-                    "time": 5.53,
-                    "steps": 23,
-                    "method": "bfs",
-                    "date": "2026-03-07 18:17:11"
-                },
-                {
-                    "time": 27.15,
-                    "steps": 109,
-                    "method": "dfs",
-                    "date": "2026-03-07 18:18:15"
-                },
-                {
-                    "time": 5.54,
-                    "steps": 23,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:13:39"
-                },
                 {
                     "time": 5.58,
                     "steps": 23,
                     "method": "ucs",
-                    "date": "2026-03-10 01:01:14"
+                    "solver_time": 0.128,
+                    "nodes_expanded": 1225,
+                    "date": "2026-03-14 16:40:22"
                 },
                 {
                     "time": 5.6,
                     "steps": 23,
                     "method": "astar",
-                    "date": "2026-03-14 16:24:12"
+                    "solver_time": 0.086,
+                    "nodes_expanded": 609,
+                    "date": "2026-03-14 16:43:22"
                 }
             ]
         },
         "13": {
-            "best_time": 7.57,
+            "best_time": 7.52,
             "best_steps": 31,
+            "best_solver_t": 0.222,
             "history": [
                 {
-                    "time": 46.13,
-                    "steps": 185,
-                    "method": "dfs",
-                    "date": "2026-03-07 18:19:12"
-                },
-                {
-                    "time": 7.6,
-                    "steps": 31,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:13:49"
-                },
-                {
-                    "time": 7.6,
+                    "time": 7.52,
                     "steps": 31,
                     "method": "ucs",
-                    "date": "2026-03-10 15:01:25"
+                    "solver_time": 0.249,
+                    "nodes_expanded": 2342,
+                    "date": "2026-03-14 16:40:31"
                 },
                 {
-                    "time": 7.57,
+                    "time": 7.61,
                     "steps": 31,
                     "method": "astar",
-                    "date": "2026-03-14 16:24:21"
+                    "solver_time": 0.222,
+                    "nodes_expanded": 1613,
+                    "date": "2026-03-14 16:43:31"
                 }
             ]
         },
         "14": {
-            "best_time": 5.53,
+            "best_time": 5.59,
             "best_steps": 23,
+            "best_solver_t": 2.611,
             "history": [
                 {
-                    "time": 216.5,
-                    "steps": 865,
-                    "method": "dfs",
-                    "date": "2026-03-07 18:22:57"
-                },
-                {
-                    "time": 5.53,
-                    "steps": 23,
-                    "method": "bfs",
-                    "date": "2026-03-07 18:23:14"
-                },
-                {
-                    "time": 5.54,
+                    "time": 5.59,
                     "steps": 23,
                     "method": "ucs",
-                    "date": "2026-03-07 18:23:27"
+                    "solver_time": 4.444,
+                    "nodes_expanded": 26352,
+                    "date": "2026-03-14 16:40:43"
                 },
                 {
-                    "time": 5.54,
+                    "time": 5.59,
                     "steps": 23,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:13:58"
-                },
-                {
-                    "time": 5.61,
-                    "steps": 24,
                     "method": "astar",
-                    "date": "2026-03-14 16:24:39"
+                    "solver_time": 2.611,
+                    "nodes_expanded": 13547,
+                    "date": "2026-03-14 16:43:41"
                 }
             ]
         },
         "15": {
-            "best_time": 26.07,
+            "best_time": 26.08,
             "best_steps": 105,
+            "best_solver_t": 0.418,
             "history": [
                 {
-                    "time": 72.68,
-                    "steps": 291,
-                    "method": "dfs",
-                    "date": "2026-03-07 18:24:45"
-                },
-                {
-                    "time": 26.09,
-                    "steps": 105,
-                    "method": "bfs",
-                    "date": "2026-03-07 18:25:21"
-                },
-                {
-                    "time": 26.07,
-                    "steps": 105,
-                    "method": "bfs",
-                    "date": "2026-03-08 16:14:26"
-                },
-                {
-                    "time": 26.12,
+                    "time": 26.11,
                     "steps": 105,
                     "method": "ucs",
-                    "date": "2026-03-10 01:01:45"
+                    "solver_time": 0.418,
+                    "nodes_expanded": 2505,
+                    "date": "2026-03-14 16:41:11"
                 },
                 {
-                    "time": 26.1,
+                    "time": 26.08,
                     "steps": 105,
                     "method": "astar",
-                    "date": "2026-03-14 16:25:08"
+                    "solver_time": 0.47,
+                    "nodes_expanded": 2336,
+                    "date": "2026-03-14 16:44:09"
+                }
+            ]
+        },
+        "16": {
+            "best_time": 8.32,
+            "best_steps": 34,
+            "best_solver_t": 4.143,
+            "history": [
+                {
+                    "time": 8.32,
+                    "steps": 34,
+                    "method": "ucs",
+                    "solver_time": 23.541,
+                    "nodes_expanded": 57275,
+                    "date": "2026-03-14 16:41:44"
+                },
+                {
+                    "time": 8.32,
+                    "steps": 34,
+                    "method": "astar",
+                    "solver_time": 4.143,
+                    "nodes_expanded": 9292,
+                    "date": "2026-03-14 16:44:22"
                 }
             ]
         }
